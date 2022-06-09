@@ -32,16 +32,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/order-summary-card-Zrp5vDxz2Z)
+- [Live Site URL](https://sh-order-summary-card.netlify.app/)
 
 ## My process
 
-1. Built a library of custom CSS properties for every colour, font-size, font-weight, gutter spacing and corner radii that came up in the figma file.
+1. Built a library of custom CSS properties for every colour, font-size, font-weight and corner radii that came up in the figma file. Padding was all over the shop, so skipped this.
 2. Built my HTML with class names and wrappers for content.
 3. Verified my class names according to BEM criteria.
 4. Went back over the HTML to clean up any non-semantic class names I'd used as well as ensuring that I wasn't using divs when I could have been using something better (e.g. `section.card` rather than `div.card`).
