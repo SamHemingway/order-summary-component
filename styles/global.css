@@ -1,0 +1,207 @@
+/*==============================
+TABLE OF CONTENTS 
+
+|1| IMPORTS
+|2| VARIABLES
+|3| BASIC ELEMENTS
+|4| CARD COMPONENT
+|5| MEDIA QUERIES
+==============================*/
+
+/*==============================
+|1| IMPORTS
+==============================*/
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/*==============================
+|2| VARIABLES - See /styles/variables.css
+==============================*/
+
+/*==============================
+|3| BASIC ELEMENTS
+==============================*/
+
+:root * {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../images/pattern-background-mobile.svg"), var(--clr-primary);
+  background-position: center top;
+  background-repeat: no-repeat;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  color: var(--clr-content);
+  text-align: center;
+}
+
+.attribution {
+  display: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/*==============================
+|4| CARD COMPONENT
+==============================*/
+
+.card-payment-wrapper {
+  background: white;
+  max-width: 327px;
+  border-radius: var(--rad-md);
+  overflow: hidden;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+}
+
+.card-payment-wrapper__hero-img {
+  width: 100%;
+}
+
+.card-payment {
+  padding: 24px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-payment > * {
+  margin-bottom: 0px;
+}
+
+.card-payment__title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-black);
+  color: var(--clr-important);
+  margin-top: 0px;
+}
+
+.plan-choice {
+  margin-top: 24px;
+  padding: 16px;
+  background: var(--clr-tertiary);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+  border-radius: var(--rad-sm);
+  width: 100%;
+  line-height: 25px;
+}
+.plan-choice * {
+  margin: 0;
+}
+
+.plan-choice__icon {
+  height: 100%;
+}
+
+.plan-choice-content {
+  flex: 1;
+}
+
+.plan-choice-content__header {
+  font-size: var(--fs-sm);
+  color: var(--clr-important);
+  font-weight: var(--fw-black);
+  margin-bottom: 3px;
+}
+.plan-choice-content__body {
+  font-size: var(--fs-sm);
+}
+
+.plan-choice__link {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  color: var(--clr-strong);
+}
+
+.plan-choice__link:hover,
+.plan-choice__link:focus {
+  color: var(--clr-highlight);
+}
+
+.card-payment__button {
+  width: 100%;
+  margin-top: 24px;
+  background: var(--clr-strong);
+  color: white;
+  padding: 15px;
+  font-weight: var(--fw-black);
+  font-size: var(--fs-md);
+  border: none;
+  border-radius: var(--rad-sm);
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+
+.card-payment__button:hover,
+.card-payment__button:focus {
+  background: var(--clr-highlight);
+  cursor: pointer;
+}
+
+.card-payment__link {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: var(--clr-content);
+  font-weight: var(--fw-black);
+  font-size: var(--fs-md);
+}
+
+.card-payment__link:hover,
+.card-payment__link:focus {
+  color: var(--clr-important);
+}
+
+/*==============================
+|5| MEDIA QUERIES
+==============================*/
+
+/* Switches to desktop bg image at width of mobile bg image */
+
+@media only screen and (min-width: 375px) {
+  body {
+    background: url("../images/pattern-background-desktop.svg"), var(--clr-primary);
+    background-position: center top;
+    background-repeat: repeat-x;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  /* Redefine variables for tablet+ screen sizes */
+  :root {
+    --fs-xs: 0.875rem;
+    --fs-sm: 0.9375rem;
+    --fs-md: 1rem;
+    --fs-lg: 1.75rem;
+  }
+
+  .card-payment-wrapper {
+    max-width: 450px;
+  }
+
+  .card-payment {
+    padding: 45px 48px 48px 48px;
+    margin-top: -5px;
+  }
+
+  .plan-choice {
+    padding: 24px;
+  }
+
+  .card-payment__link {
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
+
+  .card-payment__button {
+    margin-top: 32px;
+  }
+}

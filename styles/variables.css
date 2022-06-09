@@ -1,0 +1,73 @@
+:root {
+  /* COLOURS */
+
+  --clr-primary: rgba(224, 232, 255, 1); /* Most common colour, example: body background colour. */
+  --clr-tertiary: rgba(247, 249, 255, 1); /* Tertiary colour, example: highlight backgrounds */
+  --clr-important: rgba(31, 46, 85, 1); /* Primary attention in element, example: heading tags. */
+  --clr-strong: rgba(56, 42, 225, 1); /* Generally used for CTAs */
+  --clr-content: rgba(113, 127, 166, 1); /* Used on high-frequency elements, example: body text. */
+  --clr-highlight: rgba(118, 108, 241, 1);
+
+  /* TYPOGRAPHY */
+
+  --ff-primary: "Red Hat Display", sans-serif; /* Main font family used throughout design. */
+
+  /* Mobile font sizes */
+
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 0.9375rem;
+  --fs-lg: 1.375rem;
+
+  --fw-regular: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  /* Desktop font sizes */
+
+  --desktop-fs-xs: 0.875rem;
+  --desktop-fs-sm: 0.9375rem; /* Yes. The figma has elements with fz: 15px and fz: 16px 💀 */
+  --desktop-fs-md: 1rem;
+  --desktop-fs-lg: 1.75rem;
+
+  /* GUTTERS */
+
+  /*================
+    
+  Mobile gutters:
+  
+  24px - padding in card
+  45px — y axis, hero image to header
+  32px - y axis, plan info to payment button & payment button to cancel order
+  24px - padding in plan info area
+  20px - y axis, card text to plan info. x axis, music img to plan info text
+  17px - y axis, card header to card text
+  15px - padding for button
+  
+  Desktop gutters:
+	
+	48px - padding in card
+	45px — y axis, hero image to header
+	32px - y axis, plan info to payment button & payment button to cancel order
+	24px - padding in plan info area
+	20px - y axis, card text to plan info. x axis, music img to plan info text
+	17px - y axis, card header to card text
+	15px - padding for button
+
+  
+  There's no rhyme or reason here, more effort than it's worth to put these into variables. Can't even figure out a way to make the majority of them nicely divisible so a calc would work! Going to make my styles messy as I'll have to add margins to the flex items rather than just add a gap to the flex container and call it a day.
+  
+  =================*/
+
+  /* RADII */
+
+  /*================
+	
+	20px - main card border radius
+	11px - plan info border radius & button radius
+	
+  =================*/
+
+  --rad-sm: 0.6875rem;
+  --rad-md: 1.25rem;
+}
